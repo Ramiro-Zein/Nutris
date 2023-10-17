@@ -1,0 +1,22 @@
+DROP DATABASE IF EXISTS Nutris;
+
+CREATE DATABASE Nutris;
+
+USE Nutris;
+
+CREATE TABLE users (
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	username VARCHAR(50) NOT NULL,
+	password VARCHAR(100) NOT NULL,
+	fullname VARCHAR(50) NOT NULL,
+);
+
+CREATE TABLE links (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(25),
+    url VARCHAR(150),
+    descripcion VARCHAR(100),
+    user_id INT(11)
+);
+
+SELECT * FROM users;

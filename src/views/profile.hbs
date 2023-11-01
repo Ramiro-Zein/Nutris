@@ -1,13 +1,33 @@
-<div class="container p-4">
-    <div class="row">
-        <div class="col-md-4 mx-auto">
-            <div class="card text-center">
+<div class="container-fluid p-4">
+    <h4>Bienvenido {{user.fullname}}</h4>
+    <div class="row align-items-end text-center">
+        <div class="col d-flex justify-content-center align-items-center p-4">
+            <div class="card" style="width: 18rem;">
+                <img src="css/img/Program/Dieta.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h3>Welcome {{user.fullname}}</h3>
-                    <h4>{{user.username}}</h4>
-                    <a href="/links" class="btn btn-info m-4">
-                        Save your Links    
-                    </a>
+                    <h5 class="card-title">Dieta</h5>
+                    <p class="card-text text-justify">En este espacio podras crar una dieta personalizada que podras seguir para tener una mejor calidad en tu alimentación.</p>
+                    <a href="/crearDieta" class="btn btn-info">Crea una dieta</a>
+                </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center align-items-center p-4">
+            <div class="card" style="width: 18rem;">
+                <img src="css/img/Program/Rutina.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Rutina</h5>
+                    <p class="card-text text-justify">En este espacio podras crar una dieta personalizada que podras seguir para tener una mejor calidad en tu alimentación.</p>
+                    <a href="/crearDieta" class="btn btn-info">Crea una rutina</a>
+                </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center align-items-center p-4">
+            <div class="card" style="width: 18rem;">
+                <img src="css/img/Program/Info.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Info</h5>
+                    <p class="card-text text-justify">En este espacio podras crar una dieta personalizada que podras seguir para tener una mejor calidad en tu alimentación.</p>
+                    <a href="/crearDieta" class="btn btn-info">Saber más</a>
                 </div>
             </div>
         </div>

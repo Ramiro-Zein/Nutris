@@ -1,5 +1,11 @@
+* {
+    color: #383838;
+}
 body {
     font-family: 'Oleo Script';
-    background-color: #FFF;
-    color: #191919;
+    background-color: #fff;
+}
+
+h4 {
+    font-family: 'Oleo Script';
 }

@@ -27,7 +27,7 @@ router.get('/', isLoggedIn, async(req, res) => {
     res.render('links/list', { links });
 });
 
-router.get('/delete/:id',isLoggedIn, async (req, res) => {
+router.get('/delete/:id', isLoggedIn, async (req, res) => {
     const { id } = req.params;
     await pool.query('DELETE FROM links WHERE id = ?', [id]);
     res.redirect('/links');
@@ -36,7 +36,7 @@ router.get('/delete/:id',isLoggedIn, async (req, res) => {
 router.get('/edit/:id', isLoggedIn, async (req, res) => {
     const {id} = req.params;
     const links = await pool.query('SELECT * FROM links WHERE id = ?', [id]);
-    res.render('links/edit', {link: links[0]});
+    res.render('links/edit', {link: links[0]})
 });
 
 router.post('/edit/:id', isLoggedIn, async (req, res) => {
@@ -50,5 +50,7 @@ router.post('/edit/:id', isLoggedIn, async (req, res) => {
     await pool.query('UPDATE links set ? WHERE id = ?', [newLink, id]);
     res.redirect('/links');
 });
+
+
 
 module.exports = router;

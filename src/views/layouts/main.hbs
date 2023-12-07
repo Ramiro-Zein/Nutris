@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutris</title>
+    <title>Electronic Circuit</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Oleo+Script&display=swap" rel="stylesheet">
@@ -13,6 +13,60 @@
 <body>
     {{> navigation }}
 
+    <style>
+        body {
+            background-color: #141414;
+            color: aliceblue;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 3px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .message.other-message {
+            display: flex;
+            align-items: center;
+            padding: 10px; 
+        }
+
+        .message.other-message .message-content {
+            flex-grow: 1; 
+            background-color: #141414;
+        }
+
+        .message.other-message .other {
+            font-weight: bold;
+        }
+
+        .message.other-message .text {
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .message.other-message .text pre {
+            background-color: inherit;
+            border: none; 
+            padding: 0;
+            white-space: pre-wrap;
+        }
+
+        .message.other-message .text em {
+            font-style: italic;
+        }
+
+    </style>
     {{{ body }}}
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

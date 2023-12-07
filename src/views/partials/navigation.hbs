@@ -1,41 +1,47 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
+  <div class="container-fluid">
     <a class="navbar-brand" href="/">
-      <i class="fas fa-link"></i> Nutris
+      <img src="css/img/Vectores/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top m-1">
+      Electronic Circuit
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
       aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        {{#if user}}
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-          Links
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/links">All Links</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="/links/add">Add A Link</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/profile">Profile</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/logout">Logout</a>
-        </li>
-        {{else}}
-        <li class="nav-item">
-          <a class="nav-link" href="/signin">SignIn</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/signup">SignUp</a>
-        </li>
-        {{/if}}
-      </ul>
-    </div>
+  </div>
+  <div class="collapse navbar-collapse container-xxl" id="navbarNav"> 
+    <ul class="navbar-nav ms-auto">
+      {{#if user}}
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+        Generar
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/profile">Perfil</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/info">Info</a>
+          <a class="dropdown-item" href="/chat">Chat</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/profile">Perfil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/logout">Cerrar Sesión</a>
+      </li>
+      {{else}}
+      <li class="nav-item">
+        <a class="nav-link" href="/signin">Iniciar Sesión</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/signup">Registrarse</a>
+      </li>
+      {{/if}}
+    </ul>
   </div>
 </nav>

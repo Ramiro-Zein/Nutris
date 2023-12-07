@@ -2,31 +2,30 @@
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light bg-body-tertiary">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">
       <img src="css/img/Vectores/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top m-1">
-      Nutris
+      Electronic Circuit
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
       aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   </div>
-  <div class="collapse navbar-collapse container-xxl" id="navbarNav"> <!-- Mueve la clase 'collapse navbar-collapse' aquí -->
+  <div class="collapse navbar-collapse container-xxl" id="navbarNav"> 
     <ul class="navbar-nav ms-auto">
       {{#if user}}
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
-        Pendientes
+        Generar
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="/dieta">Dietas</a>
-          <a class="dropdown-item" href="/crearDieta">Agregar dieta</a>
+          <a class="dropdown-item" href="/profile">Perfil</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="/dieta">Rutina</a>
-          <a class="dropdown-item" href="/crearDieta">Agregar rutina</a>
+          <a class="dropdown-item" href="/info">Info</a>
+          <a class="dropdown-item" href="/chat">Chat</a>
         </div>
       </li>
       <li class="nav-item">

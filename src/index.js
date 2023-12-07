@@ -18,6 +18,7 @@ require('./lib/passport');
 app.set('port', process.env.PORT || 6010);
 app.set('views', path.join(__dirname, 'views'));
 
+// Extensión .hbs
 app.engine('.hbs', exphbs({
     defaultLayout: 'main',
     layoutsDir: path.join(app.get('views'), 'layouts'),
@@ -62,3 +63,4 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.listen(app.get('port'), () => {
     console.log('Server listening on port', app.get('port'));
 });
+
